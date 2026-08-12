@@ -23,6 +23,8 @@ cd Heracles
 
 A template is available in docker/template, clone it in docker/heracles folder and modify variable
 
+Do not forget to create a folder name "postgres" in docker/heracles
+
 #### Podman
 ```bash
 cd docker/heracles
