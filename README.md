@@ -53,7 +53,7 @@ dotnet user-secrets set "ConnectionStrings:DefaultConnection" "<postgres-connect
 
 Configure the JWT secret:
 ```bash
-dotnet user-secrets set "Jwt:Key" "<your-jwt-secret>" --project src/Heracles.Api
+dotnet user-secrets set "Jwt:Secret" "<your-jwt-secret>" --project src/Heracles.Api
 ```
 
 
