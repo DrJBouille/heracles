@@ -1,0 +1,23 @@
+# .NET
+**/bin/
+**/obj/
+
+# User Secrets
+**/secrets.json
+
+# .env
+docker/heracles/.env
+
+# Angular
+node_modules/
+.angular/
+dist/
+
+# IDE
+.idea/
+.vs/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

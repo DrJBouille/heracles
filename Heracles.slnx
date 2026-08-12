@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Heracles.Api/Heracles.Api.csproj" />
+    <Project Path="src/Heracles.Application/Heracles.Application.csproj" />
+    <Project Path="src/Heracles.Domain/Heracles.Domain.csproj" />
+    <Project Path="src/Heracles.Infrastructure/Heracles.Infrastructure.csproj" />
+  </Folder>
+</Solution>

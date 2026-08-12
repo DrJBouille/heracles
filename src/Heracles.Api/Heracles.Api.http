@@ -1,0 +1,6 @@
+@Heracles.Api_HostAddress = http://localhost:5174
+
+GET {{Heracles.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
