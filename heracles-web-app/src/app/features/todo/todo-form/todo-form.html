@@ -1,0 +1,11 @@
+<form class="flex flex-col gap-3" [formGroup]="form" (ngSubmit)="submit()">
+  <app-subtitle label="Add To Do Item"/>
+
+  <app-input label="Title" placeholder="Do something" [control]="form.controls.title" />
+
+  @if (loading()) {
+    <app-button label="Creating..." [disabled]="true"/>
+  } @else {
+    <app-button label="Created"/>
+  }
+</form>

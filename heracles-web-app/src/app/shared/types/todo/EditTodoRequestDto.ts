@@ -1,0 +1,3 @@
+interface EditTodoRequestDto {
+  title: string,
+}

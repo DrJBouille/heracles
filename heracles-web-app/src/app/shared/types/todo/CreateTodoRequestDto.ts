@@ -1,0 +1,3 @@
+interface CreateTodoRequestDto {
+  title: string
+}

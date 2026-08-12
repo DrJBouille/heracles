@@ -1,0 +1,36 @@
+<form [formGroup]="form" (ngSubmit)="editTodo()" class="w-64 flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:border-slate-300 hover:shadow-md">
+  <div class="w-full flex justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <app-checkbox
+        [checked]="todo().isCompleted"
+        [size]="6"
+        (checkedChange)="toggleCompleted()"
+      />
+
+      @if (!editing()) {
+        <app-subtitle [label]="todo().title" />
+      } @else {
+        <app-input [control]="form.controls.title"></app-input>
+      }
+    </div>
+
+    @if (editing()) {
+      <button type="button" (click)="stopEditing()">
+        <span class="material-icons-outlined">cancel</span>
+      </button>
+    } @else {
+      <button type="button" (click)="startEditing()">
+        <span class="material-icons">edit</span>
+      </button>
+    }
+  </div>
+
+  <app-small-text
+    [label]="(todo().createdAt | date:'medium') ?? ''"
+    class="text-slate-400"
+  />
+
+  @if (editing() && form.value.title !== todo().title) {
+    <app-button label="Save Changes"/>
+  }
+</form>
